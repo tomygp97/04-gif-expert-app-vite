@@ -1,12 +1,12 @@
 import { useState } from 'react';
-// import PropTypes from 'prop-types';  // Da error en vite
+import PropTypes from 'prop-types';  // Da error en vite
 
 export const AddCategory = ({onNewCategory}) => {
 
   const [inputValue, setInputValue] = useState("");
 
-  const onImputChange = (e) => {
-    setInputValue(e.target.value)
+  const onImputChange = ({target}) => {
+    setInputValue(target.value)
   }
 
   const onSubmit = (event) => {
@@ -39,8 +39,8 @@ export const AddCategory = ({onNewCategory}) => {
 }
 
 
-// AddCategory.propTypes = {
-//     setCategories: PropTypes.func.isRequired
-// }
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
+}
 
 export default AddCategory;
