@@ -5,6 +5,10 @@ export const AddCategory = ({onNewCategory}) => {
 
   const [inputValue, setInputValue] = useState("");
 
+  
+  // const onImputChange = (e) => {
+  //   setInputValue(e.target.value)
+  // }  
   const onImputChange = ({target}) => {
     setInputValue(target.value)
   }
@@ -21,7 +25,7 @@ export const AddCategory = ({onNewCategory}) => {
 
   return (
     <>
-        <form onSubmit= {onSubmit}> 
+        <form onSubmit= {onSubmit} aria-label="form"> 
 
         <input 
             type= "text"
