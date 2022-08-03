@@ -7,6 +7,7 @@ export const GifExpertApp = () => {
 
     // const categories = ["One Punch", "Naruto", "Shingeki no Kyojin"]
     const [categories, setCategories] = useState(["One Punch", "Shingeki no Kyojin", "Naruto"]);
+    // const [categories, setCategories] = useState([]);
     
     // const handleAddGintama = () => { //boton que agrega gintama a la lista
         
